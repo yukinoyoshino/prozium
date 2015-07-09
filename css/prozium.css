@@ -65,6 +65,9 @@ body {
   font-size: 32px;
   font-family: 'Courier New';
 }
+.header__title a {
+  color: #C6D1D7;
+}
 
 /*
  * footer
@@ -79,12 +82,21 @@ body {
 }
 
 /*
+ * section
+ */
+.tool-list, .count-string {
+  min-height: 428px;
+  background-color: #97A3A5;
+}
+.count-string {
+  padding: 16px;
+}
+
+/*
  * tool-list
  */
 .tool-list {
-  min-height: 428px;
   padding: 16px 0 0 0;
-  background-color: #97A3A5;
 }
 .tool-list li {
   display: inline-block;
@@ -125,3 +137,7 @@ body {
 .tool-list__category a {
   color: #2E5875;
 }
+
+/*
+ * count-string
+ */
