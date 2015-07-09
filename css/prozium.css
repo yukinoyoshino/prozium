@@ -1,0 +1,143 @@
+/*
+ * https://color.adobe.com/ja/Prozium-color-theme-6473478/
+ * base-color: #97A3A5;
+ * main-color: #29618D;
+ * accent-color: #2E5875;
+ * color: #1D261C;
+ * light-color: #C6D1D7;
+ */
+
+/*
+ * reset
+ */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  text-decoration: none;
+  line-height: 1;
+  vertical-align: baseline;
+  list-style-type: none;
+}
+
+/*
+ * body
+ */
+body {
+  background-color: #29618D;
+  color: #1D261C;
+  font-family: 'ヒラギノ角ゴ ProN W3', 'メイリオ',Meiryo, "ＭＳ ゴシック",sans-serif;
+  font-size: 14px;
+}
+
+/*
+ * header
+ */
+.header {
+  padding: 14px;
+  color: #C6D1D7;
+  background-color: #29618D;
+}
+.header__top {
+  height: 16px;
+  margin-bottom: 10px;
+}
+.header__top--description,
+.header__top--navigation {
+  display: inline-block;
+}
+.header__top--description {
+  float: left;
+}
+.header__top--navigation {
+  float: right;
+}
+.header__top--navigation li {
+  display: inline-block;
+  margin-right: 14px;
+}
+.header__top--navigation a {
+  color: #C6D1D7;
+}
+.header__title {
+  font-size: 32px;
+  font-family: 'Courier New';
+}
+.header__title a {
+  color: #C6D1D7;
+}
+
+/*
+ * footer
+ */
+.footer {
+  padding: 14px;
+  color: #C6D1D7;
+}
+.footer__copyright {
+  text-align: center;
+  font-size: 10px;
+}
+
+/*
+ * section
+ */
+.tool-list, .count-string {
+  min-height: 428px;
+  background-color: #97A3A5;
+}
+.count-string {
+  padding: 16px;
+}
+
+/*
+ * tool-list
+ */
+.tool-list {
+  padding: 16px 0 0 0;
+}
+.tool-list li {
+  display: inline-block;
+  float: left;
+  width: 160px;
+  height: 240px;
+  margin-left: 16px;
+  background-color: #C6D1D7;
+  box-shadow:rgba(29, 38, 28, 0.498039) 0px 0px 6px 3px;
+  -webkit-box-shadow:rgba(29, 38, 28, 0.498039) 0px 0px 6px 3px;
+  -moz-box-shadow:rgba(29, 38, 28, 0.498039) 0px 0px 6px 3px;
+}
+.tool-list p {
+  margin: 0 8px 8px;
+}
+.tool-list__image {
+  width: 160px;
+  height: 140px;
+  margin-bottom: 8px;
+  text-align: center;
+  vertical-align: middle;
+  overflow: hidden;
+}
+.tool-list__title {
+  font-size: 16px;
+  font-weight: bold;
+}
+.tool-list__title a {
+  color: #1D261C;
+}
+.tool-list__description {
+  height: 38px;
+  line-height: 1.4;
+}
+.tool-list__category {
+  font-size: 10px;
+}
+.tool-list__category a {
+  color: #2E5875;
+}
+
+/*
+ * count-string
+ */
