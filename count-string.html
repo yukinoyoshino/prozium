@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title></title>
+  <meta charset="utf-8" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" href="" /><!-- fabicon -->
+  <link rel="stylesheet" href="" />
+  <!--[if lt IE 9]>
+  <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  <script src="js/jquery.js" type="text/javascript"></script>
+  <script src="js/prozium/string.js" type="text/javascript"></script>
+</head>
+<body>
+  <section>
+    <article class="input">
+      <ul>
+        <li><textarea class="input__text"></textarea></li>
+        <li><a href="#" class="input__count">計算する</a></li>
+      </ul>
+    </article>
+    <article class="result">
+      <ul>
+        <li>文字数：<span class="result__total"></span>文字</li>
+      </ul>
+    </article>
+  </section>
+  <script type="text/javascript">
+    (function(){
+      new PROZIUM.string({
+        inputTextClassName: '.input__text',
+        outputTextClassName: '.result__total',
+        triggerClassName: '.input__count',
+        operationType: 'count'
+      });
+    })();
+  </script>
+</body>
+</html>
