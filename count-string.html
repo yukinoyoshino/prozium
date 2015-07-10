@@ -38,7 +38,11 @@
     </article>
     <article class="result">
       <ul>
-        <li>文字数：<span class="result__total"></span>文字</li>
+        <li>総文字数：<input type="text" class="result__total" value="" size="5" />文字</li>
+        <li>HTMLタグを除いた文字数：<input type="text" class="result__removed-tag" value="" size="5" />文字</li>
+        <li>引用文を除いた文字数：<input type="text" class="result__removed-cite" value="" size="5" />文字</li>
+        <li>外部コンテンツの埋め込みを除いた文字数：<input type="text" class="result__removed-embed" value="" size="5" />文字</li>
+        <li>プレーンな文章の文字数：<input type="text" class="result__plain" value="" size="5" />文字</li>
       </ul>
     </article>
   </section>
@@ -46,8 +50,14 @@
     (function(){
       new PROZIUM.string({
         inputTextClassName: '.input__text',
-        outputTextClassName: '.result__total',
         triggerClassName: '.input__count',
+        outputTargetList: {
+          countedTotal: '.result__total',
+          countedRemovedTag: '.result__removed-tag',
+          countedRemovedCite: '.result__removed-cite',
+          countedRemovedEmbed: '.result__removed-embed',
+          countedPlainText: '.result__plain'
+        },
         operationType: 'count'
       });
     })();
