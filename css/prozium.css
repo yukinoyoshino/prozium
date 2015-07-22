@@ -1,10 +1,10 @@
 /*
- * https://color.adobe.com/ja/Prozium-color-theme-6473478/
- * base-color: #97A3A5;
- * main-color: #29618D;
+ * https://color.adobe.com/ja/Prozium-Light-color-theme-6479867/
+ * base-color: #AAB8BA;
+ * main-color: #3987C4;
  * accent-color: #2E5875;
  * color: #1D261C;
- * light-color: #C6D1D7;
+ * light-color: #D8E4EB;
  */
 
 /*
@@ -18,7 +18,7 @@
   font-size: 100%;
   text-decoration: none;
   line-height: 1;
-  vertical-align: baseline;
+  vertical-align: top;
   list-style-type: none;
 }
 
@@ -26,7 +26,7 @@
  * body
  */
 body {
-  background-color: #29618D;
+  background-color: #3987C4;
   color: #1D261C;
   font-family: 'ヒラギノ角ゴ ProN W3', 'メイリオ',Meiryo, "ＭＳ ゴシック",sans-serif;
   font-size: 14px;
@@ -37,8 +37,8 @@ body {
  */
 .header {
   padding: 14px;
-  color: #C6D1D7;
-  background-color: #29618D;
+  color: #D8E4EB;
+  background-color: #3987C4;
 }
 .header__top {
   height: 16px;
@@ -59,14 +59,14 @@ body {
   margin-right: 14px;
 }
 .header__top--navigation a {
-  color: #C6D1D7;
+  color: #D8E4EB;
 }
 .header__title {
   font-size: 32px;
   font-family: 'Courier New';
 }
 .header__title a {
-  color: #C6D1D7;
+  color: #D8E4EB;
 }
 
 /*
@@ -74,7 +74,7 @@ body {
  */
 .footer {
   padding: 14px;
-  color: #C6D1D7;
+  color: #D8E4EB;
 }
 .footer__copyright {
   text-align: center;
@@ -84,60 +84,24 @@ body {
 /*
  * section
  */
-.tool-list, .count-string {
-  min-height: 428px;
-  background-color: #97A3A5;
-}
+.tool-list,
 .count-string {
-  padding: 16px;
+  min-height: 428px;
+  background-color: #AAB8BA;
 }
 
 /*
- * tool-list
+ * article
  */
-.tool-list {
-  padding: 16px 0 0 0;
-}
-.tool-list li {
+.input,
+.result {
   display: inline-block;
-  float: left;
-  width: 160px;
-  height: 240px;
-  margin-left: 16px;
-  background-color: #C6D1D7;
-  box-shadow:rgba(29, 38, 28, 0.498039) 0px 0px 6px 3px;
-  -webkit-box-shadow:rgba(29, 38, 28, 0.498039) 0px 0px 6px 3px;
-  -moz-box-shadow:rgba(29, 38, 28, 0.498039) 0px 0px 6px 3px;
+  width: 48%;
+  min-height: 320px;
+  padding: 10px;
+  background-color: #D8E4EB;
 }
-.tool-list p {
-  margin: 0 8px 8px;
+.input__text {
+  color: ;
+  background-color: #D8E4EB;
 }
-.tool-list__image {
-  width: 160px;
-  height: 140px;
-  margin-bottom: 8px;
-  text-align: center;
-  vertical-align: middle;
-  overflow: hidden;
-}
-.tool-list__title {
-  font-size: 16px;
-  font-weight: bold;
-}
-.tool-list__title a {
-  color: #1D261C;
-}
-.tool-list__description {
-  height: 38px;
-  line-height: 1.4;
-}
-.tool-list__category {
-  font-size: 10px;
-}
-.tool-list__category a {
-  color: #2E5875;
-}
-
-/*
- * count-string
- */
